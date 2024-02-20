@@ -1,0 +1,103 @@
+---
+"$schema": https://json-schema.org/draft/2020-12/schema
+title: Infrastructure Schema
+description: TODO
+type: object
+properties:
+  id:
+    "$ref": ../defs.yaml#/$defs/propertyDefinitions/id
+  geometry:
+    unevaluatedProperties: false
+    oneOf:
+      - "$ref": https://geojson.org/schema/Point.json
+      - "$ref": https://geojson.org/schema/LineString.json
+      - "$ref": https://geojson.org/schema/Polygon.json
+      - "$ref": https://geojson.org/schema/MultiPolygon.json
+  properties:
+    unevaluatedProperties: false
+    allOf:
+      - "$ref": ./defs.yaml#/$defs/propertyContainers/osmPropertiesContainer
+      - "$ref": ../defs.yaml#/$defs/propertyContainers/overtureFeaturePropertiesContainer
+      - "$ref": ../defs.yaml#/$defs/propertyContainers/levelContainer
+    required:
+      - subType
+      - class
+    properties:
+      subType:
+        description: Further description of the type of infrastructure.
+        type: string
+        enum:
+          - airport
+          - bridge
+          - communication
+          - dam
+          - manhole
+          - pier
+          - power
+          - tower
+          - transit
+      class:
+        description: Further classification of the infrastructure type
+        type: string
+        enum:
+          - mobile_phone_tower
+          - aqueduct
+          - cooling
+          - railway_halt
+          - generator
+          - bus_stop
+          - railway_station
+          - airstrip
+          - observation
+          - heliostat
+          - transformer
+          - lightning_protection
+          - dam
+          - catenary_mast
+          - viaduct
+          - bridge
+          - terminal
+          - sub_station
+          - cable_distribution
+          - movable
+          - covered
+          - insulator
+          - siren
+          - ferry_terminal
+          - hose
+          - minaret
+          - watchtower
+          - drain
+          - switch
+          - pier
+          - substation
+          - sewer
+          - cable
+          - ferry_route
+          - portal
+          - communication_tower
+          - bus_station
+          - communication_pole
+          - power_tower
+          - helipad
+          - bell_tower
+          - manhole
+          - radar
+          - cantilever
+          - diving
+          - bus_route
+          - boardwalk
+          - trestle
+          - defensive
+          - minor_line
+          - power_pole
+          - runway
+          - communication_line
+          - power_line
+          - connection
+          - plant
+          - lighting
+          - monitoring
+          - taxiway
+
+      names: { "$ref": "../defs.yaml#/$defs/propertyDefinitions/names" }
