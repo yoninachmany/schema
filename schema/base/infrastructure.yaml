@@ -20,7 +20,7 @@ properties:
       - "$ref": ../defs.yaml#/$defs/propertyContainers/overtureFeaturePropertiesContainer
       - "$ref": ../defs.yaml#/$defs/propertyContainers/levelContainer
     required:
-      - subType
+      - subtype
       - class
     properties:
       subType:

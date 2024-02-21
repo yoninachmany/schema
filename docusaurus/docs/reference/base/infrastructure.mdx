@@ -8,15 +8,14 @@ import generateResolverOptions from "@site/src/components/shared-libs/generateRe
 import yamlLoad from "@site/src/components/yamlLoad"
 import InfrastructureSchema from "!!raw-loader!@site/docs/_schema/base/infrastructure.yaml";
 
-import InfrastructureExample from "!!raw-loader!@site/docs/_examples/base/landUse-example.yaml";
-import InfrastructureExample2 from "!!raw-loader!@site/docs/_examples/base/landUse-example.yaml";
+import InfrastructureExample from "!!raw-loader!@site/docs/_examples/base/infrastructure-example.yaml";
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Infrastructure
 
-TODO
+Features in the infrastructure type come from OpenStreetMap features with tags like `aeroway`, `communication`, `bridge`, `man_made`, or `tower`. These features include bridges, aerialways, and airports.
 
 <table>
   <tr>
@@ -31,7 +30,7 @@ TODO
   </tr>
   <tr>
     <th>Type</th>
-    <td><code>landUse</code></td>
+    <td><code>infrastructure</code></td>
   </tr>
 </table>
 
@@ -50,12 +49,7 @@ TODO
 ## Examples
 
 <Tabs>
-  <TabItem value="1" label="landUse Example" default>
+  <TabItem value="1" label="Infrastructure Example" default>
     <CodeBlock language="json">{ JSON.stringify(yamlLoad(InfrastructureExample), null, 2) }</CodeBlock>
   </TabItem>
-
-  <TabItem value="2" label="landUse Example 2" default>
-    <CodeBlock language="json">{ JSON.stringify(yamlLoad(InfrastructureExample2), null, 2) }</CodeBlock>
-  </TabItem>
-
 </Tabs>
