@@ -23,7 +23,7 @@ properties:
       - subtype
       - class
     properties:
-      subType:
+      subtype:
         description: Further description of the type of infrastructure.
         type: string
         enum:
