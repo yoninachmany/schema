@@ -1,7 +1,7 @@
 ---
 "$schema": https://json-schema.org/draft/2020-12/schema
 title: Infrastructure Schema
-description: TODO
+description: Various features from OpenStreetMap such as bridges, airport runways, aerialways, or communication towers and limes.
 type: object
 properties:
   id:
@@ -40,64 +40,63 @@ properties:
         description: Further classification of the infrastructure type
         type: string
         enum:
-          - mobile_phone_tower
-          - aqueduct
-          - cooling
-          - railway_halt
-          - generator
-          - bus_stop
-          - railway_station
           - airstrip
-          - observation
-          - heliostat
-          - transformer
-          - lightning_protection
-          - dam
-          - catenary_mast
-          - viaduct
-          - bridge
-          - terminal
-          - sub_station
-          - cable_distribution
-          - movable
-          - covered
-          - insulator
-          - siren
-          - ferry_terminal
-          - hose
-          - minaret
-          - watchtower
-          - drain
-          - switch
-          - pier
-          - substation
-          - sewer
-          - cable
-          - ferry_route
-          - portal
-          - communication_tower
-          - bus_station
-          - communication_pole
-          - power_tower
-          - helipad
+          - aqueduct
           - bell_tower
-          - manhole
-          - radar
-          - cantilever
-          - diving
-          - bus_route
           - boardwalk
-          - trestle
-          - defensive
-          - minor_line
-          - power_pole
-          - runway
+          - bridge
+          - bus_route
+          - bus_station
+          - bus_stop
+          - cable
+          - cable_distribution
+          - cantilever
+          - catenary_mast
           - communication_line
-          - power_line
+          - communication_pole
+          - communication_tower
           - connection
-          - plant
+          - cooling
+          - covered
+          - dam
+          - defensive
+          - diving
+          - drain
+          - ferry_terminal
+          - generator
+          - heliostat
+          - helipad
+          - hose
+          - insulator
           - lighting
+          - lightning_protection
+          - manhole
+          - minaret
+          - minor_line
+          - mobile_phone_tower
           - monitoring
+          - movable
+          - observation
+          - pier
+          - plant
+          - portal
+          - power_line
+          - power_pole
+          - power_tower
+          - radar
+          - railway_halt
+          - railway_station
+          - runway
+          - sewer
+          - siren
+          - sub_station
+          - substation
+          - switch
           - taxiway
+          - terminal
+          - transformer
+          - trestle
+          - viaduct
+          - watchtower
 
       names: { "$ref": "../defs.yaml#/$defs/propertyDefinitions/names" }
