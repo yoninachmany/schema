@@ -1,7 +1,7 @@
 ---
 "$schema": https://json-schema.org/draft/2020-12/schema
 title: Infrastructure Schema
-description: Various features from OpenStreetMap such as bridges, airport runways, aerialways, or communication towers and limes.
+description: Various features from OpenStreetMap such as bridges, airport runways, aerialways, or communication towers and lines.
 type: object
 properties:
   id:
