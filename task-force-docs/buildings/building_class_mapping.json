@@ -114,7 +114,6 @@
 		"boathouse",
 		"digester",
 		"guardhouse",
-		"parking",
 		"service",
 		"slurry_tank",
 		"storage_tank",
@@ -124,6 +123,7 @@
 
 	"transportation": [
 		"hangar",
+		"parking",
 		"train_station",
 		"transportation"
 	]
